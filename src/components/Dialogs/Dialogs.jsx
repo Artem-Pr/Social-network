@@ -35,7 +35,7 @@ const Dialogs = (props) => {
         { id: 3, message: 'Yo' }
     ]
 
-    let dialogsElements = dialogs.map(({id, name}) => <DialogItem name={id} id={name} />); //destructuring
+    let dialogsElements = dialogs.map(({id, name}) => <DialogItem name={name} id={id} />); //destructuring
     let messagesElements = messages.map(m => <Message message={m.message} />);
 
     return (
