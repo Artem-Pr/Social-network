@@ -5,6 +5,7 @@ import Message from './Message/Message';
 import { sendMessageCreator, updateNewMessageBodyCreator } from '../../redux/dialogs-reducer';
 
 const Dialogs = (props) => {
+    debugger;
     let state = props.store.getState().dialogsPage;
 
     let dialogsElements = state.dialogs.map(({id, name}) => <DialogItem name={name} id={id} />); //destructuring
