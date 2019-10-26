@@ -5,10 +5,7 @@ import { addPostActionCreator, updateNewPostActionCreator } from '../../../redux
 
 const MyPosts = (props) => {
 
-   
-
    let postsElements = props.posts.map(p => <Post message={p.message} likesCount={p.likesCount} />);
-
    let newPostElement = React.createRef();
 
    let addPost = () => {
@@ -25,7 +22,8 @@ const MyPosts = (props) => {
          <h3>My posts</h3>
          <div>
             <div>
-               <textarea   ref={newPostElement}
+               <textarea   placeholder="Write a message..."
+                           ref={newPostElement}
                            onChange={onPostChange}
                            value={props.newPostText} />
             </div>
