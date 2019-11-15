@@ -3,3 +3,13 @@
     height: 100px;
     object-fit: cover;
 }
+
+.pageNumber {
+    padding-right: 5px;
+    cursor: pointer;
+}
+
+.selectedPage {
+    font-weight: 700;
+    font-size: 20px;
+}
