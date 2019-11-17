@@ -11,4 +11,6 @@ let reducers = combineReducers({
 
 let store = createStore(reducers);
 
+window.store = store; // for checking store in console (need to use - store.getState())
+
 export default store;
