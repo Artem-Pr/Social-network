@@ -1,6 +1,3 @@
-import avatar1 from '../assets/images/avatar1.png';
-import avatar5 from '../assets/images/avatar5.png';
-import avatar3 from '../assets/images/avatar3.png';
 const FOLLOW = 'FOLLOW';
 const UNFOLLOW = 'UNFOLLOW';
 const SET_USERS = 'SET_USERS';
