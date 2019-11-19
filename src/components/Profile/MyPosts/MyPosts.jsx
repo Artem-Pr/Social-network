@@ -4,21 +4,16 @@ import Post from './Post/Post';
 
 const MyPosts = (props) => {
 
-   debugger;
    let postsElements = props.posts.map(p => <Post message={p.message} likesCount={p.likesCount} />);
    let newPostElement = React.createRef();
 
    let onAddPost = () => {
-      debugger;
       props.addPost();
-      debugger;
    };
 
    let onPostChange = () => {
-      debugger;
       let text = newPostElement.current.value;
       props.updateNewPostText(text);
-      debugger;
    };
 
    return (
@@ -40,6 +35,6 @@ const MyPosts = (props) => {
          </div>
       </div>
    )
-}
+};
 
 export default MyPosts;
