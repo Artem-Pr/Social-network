@@ -4,7 +4,6 @@ import DialogItem from './DialogItem/DialogItem';
 import Message from './Message/Message';
 
 const Dialogs = (props) => {
-    debugger;
     let state = props.dialogsPage;
 
     let dialogsElements = state.dialogs.map(({id, name}) => <DialogItem name={name} id={id} />); //destructuring
@@ -12,17 +11,14 @@ const Dialogs = (props) => {
     let newMessageBody = state.newMessageBody;
 
     let onNewMessageChange = (e) => {
-        debugger;
         let text = e.target.value;
         props.updateNewMessageBody(text);
     };
 
     let onSendMessageClick = () => {
-        debugger;
         props.sendMessage();
     };
 
-    debugger;
     return (
         <div className={s.dialogs}>
             <div className={s.dialogItems}>
